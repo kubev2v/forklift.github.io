@@ -12,7 +12,7 @@ Forklift is an open-source tool for the large-scale migration of virtual machine
 
 * [Forklift Operator](https://github.com/konveyor/forklift-operator). The Forklift Operator deploys and maintains Forklift.
 * [Forklift Documentation](https://github.com/konveyor/forklift-documentation). Documentation for installing and using Forklift.
-* [Forklift UI](https://github.com/konveyor/forklift-ui). The Forklift UI is based on Patternfly 4.
+* [Forklift UI](https://github.com/konveyor/forklift-ui). The Forklift UI is based on [Patternfly 4](https://www.patternfly.org/v4/).
 * [Forklift Controller](https://github.com/konveyor/forklift-controller). The Forklift Controller orchestrates the migration.
 * [Forklift Validation](https://github.com/konveyor/forklift-validation). The Forklift Validation service checks the virtual machines for possible issues before migration. Runs with Open Policy Agent.
 * [Forklift `must-gather`](https://github.com/konveyor/forklift-must-gather). Support tool for gathering information about the Forklift environment.
