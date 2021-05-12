@@ -6,7 +6,8 @@ Welcome to the Forklift repository. Forklift is part of the [Konveyor](https://w
 
 ## About Forklift
 
-Forklift is an open-source tool for the large-scale migration of virtual machines from VMware vSphere 6.5 and 6.7 to KubeVirt.
+Forklift is an open-source tool for the large-scale migration of virtual machines to KubeVirt.
+The source for virtual machines initially is VMware vSphere 6.x, extending the reach progressivley to oVirt / RHV, and OpenStack. 
 
 ## Forklift projects
 
