@@ -4,6 +4,9 @@
 
 Welcome to the Forklift repository. Forklift is part of the [Konveyor](https://www.konveyor.io/) project.
 
+## About Konveyor
+[Konveyor](https://www.konveyor.io/) is a community of people passionate about helping others modernize and migrate their applications to the hybrid cloud by providing tools to accelerate rehosting, replatforming, and refactoring their applications to run on Kubernetes.
+
 ## About Forklift
 
 Forklift is an open-source tool for the large-scale migration of virtual machines to KubeVirt.
