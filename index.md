@@ -1,0 +1,42 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Konveyor Forklift"
+permalink: /
+---
+# Konveyor Forklift
+
+## What is Forklift?
+
+A tool that accelerates the process of re-hosting to Kubernetes and KubeVirt by mapping resources (network and storage) and converting VM images.
+
+![forklift](assets/images/forklift.png)
+
+Forklift is a tool that connects to VM source providers (currently VMware vSphere 6.x), using the same procedures and mechanisms as a backup tool, and streams and converts the contents to a Kubernetes + KubeVirt format. The source VMs are kept powered off, and the target VMs are started.  
+
+## A quick start with Forklift
+
+Forklift is built and deployed using Kubernetes natives, therefore an operator is provided in order to deploy and mantain it.
+Once it is deployed, it can be used through the UI or consumed via CLI or API. 
+
+* Install Forklift:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a1mXGbOHzs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+* Use Forklift. You can do so by adding a source VMware provider, establishing maps, and going to the migration plans:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mY4mw6negQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Usage
+
+Forklift takes as input the source provider VMs, and their resources (disks, networks, etc) and transforms them into resources in the target provider (Konveyor + KubeVirt)
+
+![Forklift-Usage](assets/images/usage.png)
+
+If you want to take a look at the User Interface you may reach an interactive mockup in this [link](http://konveyor-forklift-ui-preview.surge.sh/)
+
+## Discussion
+
+To discuss with the maintainers, reach out in [slack](https://kubernetes.slack.com/archives/CR85S82A2) in [kubernetes](https://slack.k8s.io/) workspace or reach out to us in the [forum](https://groups.google.com/g/forklift-dev).

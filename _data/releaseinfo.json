@@ -1,0 +1,18 @@
+{
+    "current": {
+        "release": "v2.0.0",
+        "release_url": "https://github.com/konveyor/forklift-controller/tree/release-v2.0.0",
+        "prerelease": "v2.0.0-beta",
+        "prerelease_url": "https://github.com/konveyor/forklift-controller/tree/release-v2.0.0-beta.0"
+    },
+    "next": {
+        "prerelease": null,
+        "prerelease_url": null
+    },
+    "next_next": {
+        "prerelease": null,
+        "prerelease_url": null
+    },
+    "next_release_is_minor": true,
+    "next_next_release_is_minor": false
+}

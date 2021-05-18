@@ -1,0 +1,61 @@
+<table>
+    <tbody>
+        <tr>
+            <th>Current version</th>
+            <td>
+                {% if site.data.releaseinfo.current.release_url == null %}
+                    {% if site.data.releaseinfo.current.release == null %}
+                        None
+                    {% else %}
+                        {{ site.data.releaseinfo.current.release }}
+                    {% endif %}
+                {% else %}
+                    <a href="{{ site.data.releaseinfo.current.release_url }}">{{ site.data.releaseinfo.current.release }}</a>
+                {% endif %}
+            </td>
+            <td id="release-table-cell"></td>
+        </tr>
+        <tr>
+            <th>Next version</th>
+            <td colspan="2">
+                {% if site.data.releaseinfo.next.prerelease_url == null %}
+                    {% if site.data.releaseinfo.next.prerelease == null %}
+                        None
+                    {% else %}
+                        {{ site.data.releaseinfo.next.prerelease }}
+                    {% endif %}
+                {% else %}
+                    <a href="{{ site.data.releaseinfo.next.prerelease_url }}">{{ site.data.releaseinfo.next.prerelease }}</a>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th>Next next version</th>
+            <td colspan="2">
+                {% if site.data.releaseinfo.next_next.prerelease_url == null %}
+                    {% if site.data.releaseinfo.next_next.prerelease == null %}
+                        None
+                    {% else %}
+                        {{ site.data.releaseinfo.next_next.prerelease }}
+                    {% endif %}
+                {% else %}
+                    <a href="{{ site.data.releaseinfo.next_next.prerelease_url }}">{{ site.data.releaseinfo.next_next.prerelease }}</a>
+                {% endif %}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    (function (){
+        if('{{ site.data.releaseinfo.current.prerelease }}'.startsWith('{{ site.data.releaseinfo.current.release }}')){
+            return; /*prerelease is older than the release, so don't display it*/
+        }
+        const elem = document.querySelector('#release-table-cell');
+        if('{{ site.data.releaseinfo.current.prerelease_url }}') {
+            elem.innerHTML = '<a href="{{ site.data.releaseinfo.current.prerelease_url }}">{{ site.data.releaseinfo.current.prerelease }}</a>';
+        } else {
+            elem.textContent = '{{ site.data.releaseinfo.current.prerelease }}';
+        }
+    })();
+</script>
