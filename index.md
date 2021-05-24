@@ -9,11 +9,11 @@ permalink: /
 
 ## What is Forklift?
 
-A tool that accelerates the process of re-hosting to Kubernetes and KubeVirt by mapping resources (network and storage) and converting VM images.
+A tool that accelerates the process of re-hosting / re-platforming virtual machines to Kubernetes and KubeVirt. It does so by mapping resources (network and storage), creating equivalent resources int he target, and converting disk images.
 
 ![forklift](assets/images/forklift.png)
 
-Forklift is a tool that connects to VM source providers (currently VMware vSphere 6.x), using the same procedures and mechanisms as a backup tool, and streams and converts the contents to a Kubernetes + KubeVirt format. The source VMs are kept powered off, and the target VMs are started.  
+Forklift is a tool that connects to VM source providers (currently VMware vSphere 6.x, planning to add Red Hat Virtualization / oVirt and OpenStack). Then using the same procedures and mechanisms as a backup tool, it streams and converts the contents to a Kubernetes + KubeVirt format. The source VMs are kept powered off, and the target VMs are started.
 
 ## A quick start with Forklift
 
