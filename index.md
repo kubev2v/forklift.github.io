@@ -37,6 +37,8 @@ Forklift takes as input the source provider VMs, and their resources (disks, net
 
 If you want to take a look at the User Interface you may reach an interactive mockup in this [link](http://konveyor-forklift-ui-preview.surge.sh/)
 
+* [Forklift documentation](https://forklift-docs.konveyor.io/)
+
 ## Discussion
 
 To discuss with the maintainers, reach out in [slack](https://kubernetes.slack.com/archives/CR85S82A2) in [kubernetes](https://slack.k8s.io/) workspace or reach out to us in the [forum](https://groups.google.com/g/forklift-dev).
