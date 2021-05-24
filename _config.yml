@@ -110,3 +110,7 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+google:
+  tag_manager:
+    container_id: GTM-TKPDMS3
