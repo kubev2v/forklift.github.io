@@ -13,12 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
 title: Konveyor Forklift
-description: A tool that accelerates the process of re-platforming to Kubernetes
+description: A tool that accelerates the process of moving VMs to Kubernetes and KubeVirt
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" #"konveyor.github.io/forklift" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" #"konveyor.github.io/forklift" 
 github:
-  repository_url: https://www.github.com/konveyor/forklift/
+  repository_url: https://github.com/konveyor/forklift/
   repository_name: Forklift
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
@@ -75,8 +76,6 @@ nav_sort: case_insensitive # default, equivalent to nil
 back_to_top: true
 back_to_top_text: "Back to top"
 
-#footer_content: "<a href=\"https:konveyor.github.io/forklift\">Forklift</a> is maintained by <a href=\"https://konveyor.github.io\">Konveyor.</a><br>Copyright &copy; 2020 IBM Corporation. All right reserved."
-
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
@@ -97,9 +96,6 @@ color_scheme: konveyor
 #  - url: https://kubernetes.slack.com/archives/CR85S82A2
 #    title: "&nbsp;&emsp;&emsp;Slack"
 
-# Google Tag Manager
-gtm_container_id: GTM-TKPDMS3
-
 plugins:
   - jekyll-seo-tag
 
@@ -111,6 +107,6 @@ compress_html:
   blanklines: false
   profile: false
 
-google:
-  tag_manager:
-    container_id: GTM-TKPDMS3
+# Google Tag Manager
+gtm_container_id: GTM-TKPDMS3
+
