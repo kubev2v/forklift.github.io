@@ -20,7 +20,21 @@ Forklift is a tool that connects to VM source providers (currently VMware vSpher
 Forklift is built and deployed using Kubernetes natives, therefore an operator is provided in order to deploy and mantain it.
 Once it is deployed, it can be used through the UI or consumed via CLI or API. 
 
-* Install Forklift:
+* Try the latest version of Forklift
+
+Installing latest is almost an identical procedure to released versions but requires creating a new catalog source.
+
+1. `oc create -f forklift-operator-catalog.yaml`
+1. Follow the same procedure as released versions until the Search for _Konveyor Forklift Operator_ step.
+1. There should be two _Konveyor Forklift Operator_ available for installation now.
+1. Select the _Konveyor Forklift Operator_ without the _community_ tag.
+1. Proceed to install latest.
+
+**Note:** Installing _Latest_ will also include OLM channels for released versions.
+
+More details in the [Operator README.md](https://github.com/konveyor/forklift-operator/blob/main/README.md) file.
+
+* Install a released version of Forklift:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a1mXGbOHzs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
