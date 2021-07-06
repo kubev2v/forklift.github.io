@@ -61,7 +61,6 @@ heading_anchors: true
 aux_links:
   "Konveyor Forklift":
     - "//github.com/konveyor/forklift"
-  "Konveyor Forklift Operator"
     - "//github.com/konveyor/forklift-operator"
 
 # Makes Aux links open in a new tab. Default is false
