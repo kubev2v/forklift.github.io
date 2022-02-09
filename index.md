@@ -9,7 +9,7 @@ permalink: /
 
 ## What is Forklift?
 
-A tool that accelerates the process of re-hosting / re-platforming virtual machines to Kubernetes and KubeVirt. It does so by mapping resources (network and storage), creating equivalent resources int he target, and converting disk images.
+A tool that accelerates the process of re-hosting / re-platforming virtual machines to Kubernetes and KubeVirt. It does so by mapping resources (network and storage), creating equivalent resources in the target, and converting disk images.
 
 ![forklift](assets/images/forklift.png)
 
